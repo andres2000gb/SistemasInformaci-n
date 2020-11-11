@@ -34,8 +34,7 @@ public class Signin extends HttpServlet {
 		if (request.getParameter("inputEmail") == null) {
 			request.getRequestDispatcher("signin.jsp").forward(request, response);
 		} else {
-			UserVO user = new UserVO(request.getParameter("inputEmail"), request.getParameter("inputPassword"));
-			boolean valido = dao.validateUser(user);
+			boolean valido = dao.validateUser(request.getParameter("inputEmail"),request.getParameter("inputPassword"));
 			if (valido) {
 				user.setPassword(null);
 				request.getSession().setAttribute("user",user);

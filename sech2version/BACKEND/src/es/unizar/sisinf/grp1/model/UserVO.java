@@ -6,13 +6,16 @@ public class UserVO {
 	private String apellidos;
 	private String password;
 	private String userName;
+	private int codigoPostal;
+	private String nacimiento;
 
-	UserVO(String nombre, int id, String apellidos, String password, String userName) {
+	UserVO(String nombre, int id, String apellidos, String password, int CodigoPostal, String nacimiento) {
 		this.apellidos = apellidos;
 		this.id = id;
 		this.nombre = nombre;
 		this.password = password;
-		this.userName = userName;
+		this.codigoPostal = CodigoPostal;
+		this.nacimiento = nacimiento;
 	}
 
 	public String getNombre() {
@@ -47,12 +50,20 @@ public class UserVO {
 		this.password = password;
 	}
 
-	public String getUserName() {
-		return userName;
+	public int getCodigoPostal() {
+		return codigoPostal;
 	}
 
-	public void setUserName(String userName) {
-		this.userName = userName;
+	public void setCodigoPostal(int codigoPostal) {
+		this.codigoPostal = codigoPostal;
+	}
+
+	public String getNacimiento() {
+		return nacimiento;
+	}
+
+	public void setNacimiento(String nacimiento) {
+		this.naicmiento = nacimiento;
 	}
 	
 

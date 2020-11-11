@@ -33,6 +33,27 @@
             document.getElementById("politica1").style.display = "block";
 
         }
+
+        function pruebafer(){
+            //if(todo bien escrito)
+            let aux = document.getElementById('selecthospital')
+            let hospitalelegido = aux.value;
+            aux = document.getElementById('selectoficio')
+            let oficioelegido = aux.value;
+            aux = document.getElementById('nombrePersona')
+            let nombreelegido = aux.value;
+            aux = document.getElementById('apellidosPersona')
+            let apellidoselegido = aux.value;
+            aux = document.getElementById('DNIPersona')
+            let DNIelegido = aux.value;
+            aux = document.getElementById('nacimientoPersona')
+            let nacimientoelegido = aux.value;
+            aux = document.getElementById('lugarPersona')
+            let fechaelegida = aux.value;
+            aux = document.getElementById('codigopostal')
+            let codigoelegido = aux.value;
+
+        }
     </script>
 </head>
 
@@ -80,15 +101,15 @@
                         <div class="row">
                             <div class="form-group text-left col-md-5">
                                 <label for=""><strong>*Nombre</strong></label>
-                                <input type="text" placeholder="&#128100  Nombre" class="form-control" required>
+                                <input type="text" placeholder="&#128100  Nombre" id="nombrePersona" class="form-control" required>
                             </div>
                             <div class="form-group text-left col-md-5">
                                 <label for=""><strong>*Apellidos</strong></label>
-                                <input type="text" placeholder="&#128100  Apellidos" class="form-control" required>
+                                <input type="text" placeholder="&#128100  Apellidos" id="apellidosPersona" class="form-control" required>
                             </div>
                             <div class="form-group text-left col-md-2">
                                 <label for=""><strong>*DNI</strong></label>
-                                <input type="text" placeholder="DNI" class="form-control" required>
+                                <input type="text" placeholder="DNI" id="DNIPersona" class="form-control" required>
                             </div>
                         </div>
 
@@ -125,7 +146,7 @@
                             </div>
                             <div class="form-group text-left col-md-6">
                                 <label for=""><strong>*Puesto de trabajo</strong></label>
-                                <select class="form-control" name="selecthospital" id="selecthospital" required>
+                                <select class="form-control" name="selectoficio" id="selectoficio" required>
 
                                     <!-- Opciones de la lista -->
                                     <option value="0" id="0" selected>&#127973 Elija su puesto de trabajo</option>
@@ -158,15 +179,15 @@
                         <div class="row">
                             <div class="form-group text-left col-md-3">
                                 <label for=""><strong>*Fecha de nacimiento</strong></label>
-                                <input type="date" class="form-control" required>
+                                <input type="date" id="nacimientoPersona" class="form-control" required>
                             </div>
                             <div class="form-group text-left col-md-5">
                                 <label for=""><strong>Lugar de nacimiento</strong></label>
-                                <input type="text" placeholder="&#8962  Zaragoza" class="form-control">
+                                <input type="text" id="lugarPersona" placeholder="&#8962  Zaragoza" class="form-control">
                             </div>
                             <div class="form-group text-left col-md-4">
                                 <label for=""><strong>C.P</strong></label>
-                                <input type="number" class="form-control" placeholder="Ej. 50002">
+                                <input type="number" id="codigopostal" class="form-control" placeholder="Ej. 50002">
                             </div>
                         </div>
                         <div class="form-group-button text-center">
@@ -178,7 +199,7 @@
                                             privacidad</a></span></label>
                             </div>
                             <input class="btn btn-primary form-control" type="submit" id="boton1" name="submit"
-                                value="Enviar" disabled>
+                                value="Enviar" disabled onclick="pruebafer();">
                         </div>
                     </div>
                     <div style="margin-top: 4vh;font-size: small;">
