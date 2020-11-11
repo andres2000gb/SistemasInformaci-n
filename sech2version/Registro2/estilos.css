@@ -1,0 +1,43 @@
+
+h2{
+    background: #e0ffff;
+}
+h1{
+    background:white;
+    color: black;
+}
+
+.form1{
+    background:#dcdcdc;
+    padding: 30px;
+    padding-left: 30px;    
+}
+
+.parrafo{
+   
+    padding: 30px;
+    background:#dcdcdc;
+    font-family: cursive;
+    color:black;
+}
+
+.form-group{
+    margin-top: 4%;
+}
+
+.form-group-button{
+        width: 100%;
+        border: none;
+        color: white;
+        font-size: 18px;
+        margin:0 auto;
+        margin-top: 5%;
+}
+
+.registrado{
+    color: white;
+    text-decoration: underline;
+    margin:0 auto;
+    margin-top: 5%;
+
+}

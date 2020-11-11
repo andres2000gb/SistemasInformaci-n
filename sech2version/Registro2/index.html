@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+    <!-- Favicons -->
+    <link href="assets/img/favicon.png" rel="icon">
+    <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+    <!-- Google Fonts -->
+    <link
+        href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Roboto:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
+        rel="stylesheet">
+
+    <!-- Vendor CSS Files -->
+    <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/vendor/icofont/icofont.min.css" rel="stylesheet">
+    <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+    <link href="assets/vendor/owl.carousel/assets/owl.carousel.min.css" rel="stylesheet">
+    <link href="assets/vendor/venobox/venobox.css" rel="stylesheet">
+    <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.5.1/jquery.min.js?ver=3.1.2"></script>
+    <script src="assets/js/script.js"></script>
+
+    <!-- Template Main CSS File -->
+    <link href="assets/css/style.css" rel="stylesheet">
+    <link rel="stylesheet" href="estilos.css">
+
+    <!-- Funciones -->
+    <script type="text/javascript">
+        function enableSending() {
+            // document.loginform.submit.disabled = !document.loginform.terms.checked;
+            var valor = document.getElementById("boton1").disabled;
+            document.getElementById("boton1").disabled = !valor;
+
+        };
+        function mostrar() {
+            document.getElementById("politica").style.display = "block";
+
+        }
+    </script>
+
+    <!-- =======================================================
+  * Template Name: BizLand - v2.0.1
+  * Template URL: https://bootstrapmade.com/bizland-bootstrap-business-template/
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+</head>
+
+<body>
+    <section class="container">
+        <h1 class="logo mr-auto"><a href="index.html">AppHospitales<span>.</span></a></h1>
+        <h2 class="col-5 text-uppercase ">Registra un Usuario</h2>
+        <div style="position: relative;">
+            <div class="row  text-center">
+                <div class="col-6">
+                    <form class="form1">
+                        <div class="form-group">
+                            <label for=""><strong>*Nombre</strong></label>
+                            <input type="text" placeholder="&#128100  Ingrese su nombre" class="form-control">
+                        </div>
+                        <div class="form-group">
+                            <label for=""><strong>*Apellidos</strong></label>
+                            <input type="text" placeholder="&#128100  Ingrese sus apellidos" class="form-control">
+                        </div>
+
+                        <div class="form-group">
+                            <label for=""><strong>*Fecha de nacimiento</strong></label>
+                            <input type="date" class="form-control">
+                        </div>
+                        <div class="form-group">
+                            <label for=""><strong>*Hospital</strong></label>
+                            <select class="form-control" name="selecthospital" id="selecthospital">
+
+                                <!-- Opciones de la lista -->
+                                <option value="0" id="0" selected>&#127973 Elige un Hospital</option>
+                                <option value="1" id="1">Miguel Servet</option>
+                                <option value="2" id="2">Clínico Universitario</option>
+                                <option value="3" id="3">Royo Villanova</option>
+                                <option value="4" id="4">General de la Defensa</option>
+                                <option value="5" id="5">Obispo Polanco</option>
+                                <option value="6" id="6">Hospital de Alcañiz</option>
+                                <option value="7" id="7">Hospital de Barbastro</option>
+                                <option value="8" id="8">San Jorge (Huesca)</option>
+                                <option value="9" id="9">Hospital Ernest Lluch</option>
+                                <option value="10" id="10">Sagrado Corazón de Jesús</option>
+                                <option value="11" id="11">Hospital Público San José</option>
+                                <option value="12" id="12">Hospital Ejea Cinco Villas</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for=""><strong>*Puesto de trabajo</strong></label>
+                            <select class="form-control" name="selecthospital" id="selecthospital">
+
+                                <!-- Opciones de la lista -->
+                                <option value="0" id="0" selected>&#127973 Ingrese su puesto de trabajo</option>
+                                <option value="1" id="1">Enfermeros</option>
+                                <option value="2" id="2">TCAE(Axuliar de enfermería)</option>
+                                <option value="3" id="3">TEL(Técnico de laboratorio)</option>
+                                <option value="4" id="4">Director médico</option>
+                                <option value="5" id="5">Médicos facultativos</option>
+                                <option value="6" id="6">Director de enfermería</option>
+                                <option value="7" id="7">Subdirectores médicos</option>
+                                <option value="8" id="8">Supervisores de unidad</option>
+                                <option value="9" id="9">Supervisores de área</option>
+                                <option value="10" id="10">Ténico de prevención de riesgos</option>
+                                <option value="11" id="11">TER(Técnico de rayos)</option>
+                                <option value="12" id="12">Residentes</option>
+                                <option value="13" id="13">Celadores</option>
+                                <option value="14" id="14">Estudiantes</option>
+                                <option value="15" id="15">Administrativos</option>
+                                <option value="16" id="16">Estudiantes</option>
+                                <option value="17" id="17">Infórmaticos</option>
+                                <option value="18" id="18">Personal de mantenimento</option>
+                                <option value="19" id="19">Ingenieros</option>
+                                <option value="20" id="20">Cocineros y pinches</option>
+                                <option value="21" id="21">Choferes</option>
+                                <option value="22" id="22">Personal de lavandería</option>
+                                <option value="23" id="23">Personal de seguridad</option>
+                            </select>
+                        </div>
+                            <div class="form-group">
+                                <label for=""><strong>*DNI</strong></label>
+                                <input type="text" placeholder="Ingrese su DNI" class="form-control">
+                            </div>
+                            <div class="form-group-button text-center">
+
+                                <div class="terms">
+                                    <input type="checkbox" name="terms" onclick="enableSending()">
+                                    <label for="terms"><a onclick="mostrar()">He leido y acepto las
+                                            condiciones de privacidad</a></label>
+                                </div>
+                                <input type="submit" id="boton1" name="submit" value="Enviar" disabled>
+                            </div>
+                            <p class="registrado text-center"><a href="#">Ya estoy registrado</a></p>
+                    </form>
+                </div>
+                <div class="col-6">
+                    <p class="parrafo">
+                        <strong>*Campos Obligatorios <br>
+                            La protección de las personas físicas en relación con el tratamiento
+                            de datos personales es un derecho fundamental protegido por el artículo 18.4
+                            de la Constitución española. De esta manera, nuestra Constitución fue pionera
+                            en el reconocimiento del derecho fundamental a la protección de datos personales
+                            cuando dispuso que «la ley limitará el uso de la informática para garantizar el
+                            honor y la intimidad personal y familiar de los ciudadanos y el pleno ejercicio
+                            de sus derechos».</strong>
+                    </p>
+                </div>
+            </div>
+            <div style="position: absolute; z-index: 2 ; display: none;" id="politica">
+                <h1> <strong> Política de privacidad</strong></h1>
+                <p>La visita a este sitio Web no implica que el usuario esté obligado
+                    a facilitar ninguna información. En el caso de que el usuario facilite
+                    alguna información de carácter personal, los datos recogidos en este sitio web serán
+                    tratados de forma leal y lícita con sujeción en todo momento a los principios y
+                    derechos recogidos en el Reglamento (UE) 2016/679, de 27 de abril,
+                    General de Protección de Datos (RGPD) y demás normativa aplicable.
+                    .</p>
+            </div>
+        </div>
+
+    </section>
+
+
+
+
+
+</body>
