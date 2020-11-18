@@ -1,23 +1,15 @@
 package es.unizar.sisinf.grp1.model;
 
-public class UserVO {
+public class Usuarios implements Serializable {
 	private String nombre;
-	private int id;
+	private int dni;
 	private String apellidos;
 	private String password;
-	private String userName;
 	private int codigoPostal;
 	private String nacimiento;
-
-	UserVO(String nombre, int id, String apellidos, String password, int CodigoPostal, String nacimiento) {
-		this.apellidos = apellidos;
-		this.id = id;
-		this.nombre = nombre;
-		this.password = password;
-		this.codigoPostal = CodigoPostal;
-		this.nacimiento = nacimiento;
-	}
-
+	private String trabajo;
+	private String hospital;
+	private String lugar;
 	public String getNombre() {
 		return nombre;
 	}
@@ -26,12 +18,12 @@ public class UserVO {
 		this.nombre = nombre;
 	}
 
-	public int getId() {
-		return id;
+	public int getDNI() {
+		return dni;
 	}
 
-	public void setId(int id) {
-		this.id = id;
+	public void setDNI(int dni) {
+		this.dni = dni;
 	}
 
 	public String getApellidos() {
@@ -63,8 +55,30 @@ public class UserVO {
 	}
 
 	public void setNacimiento(String nacimiento) {
-		this.naicmiento = nacimiento;
+		this.nacimiento = nacimiento;
+	}
+
+	public String getTrabajo() {
+		return trabajo;
+	}
+
+	public void setTrabajo(String trabajo) {
+		this.trabajo = trabajo;
 	}
 	
+	public String getHospital() {
+		return hospital;
+	}
 
+	public void setHospital(String hospital) {
+		this.hospital = hospital;
+	}
+
+	public String getLugar() {
+		return lugar;
+	}
+
+	public void setLugar(String lugar) {
+		this.lugar = lugar;
+	}
 }
